@@ -77,7 +77,7 @@ public class dz {
         {
             len = ray.length;
         }
-        double array[] = new double[len];
+        Double array[] = new Double[len];
         for (int i = 0; i < len; i++) 
         {
             double arg1 = (double) ar[i];
@@ -90,7 +90,6 @@ public class dz {
             {
                 throw new RuntimeException("Деление на ноль!");
             }
-            System.out.println(array[i]);
         }
         System.out.println("\nРезультат: " + Arrays.asList(array));
     }
