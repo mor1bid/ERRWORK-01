@@ -5,10 +5,19 @@ public class dz {
     {
         boolean acceptable = false;
         Scanner work = new Scanner(System.in);
-        System.out.println("Введите размер первого массива:");
-        int mylen1 = work.nextInt();
-        System.out.println("Введите размер второго массива:");
-        int mylen2 = work.nextInt();
+        int mylen1 = 5;
+        int mylen2 = 5;
+        try 
+        {
+            System.out.println("Введите размер первого массива:");
+            mylen1 = work.nextInt();
+            System.out.println("Введите размер второго массива:");
+            mylen2 = work.nextInt();
+        } 
+        catch (Exception e) 
+        {
+            throw new RuntimeException("Вы можете задавать лишь положительные целочисленные значения.");
+        }
         if (mylen1 == mylen2) 
         {
             acceptable = true;
