@@ -85,11 +85,12 @@ public class dz {
             try 
             {
                 array[i] = arg1 / arg2;
-            } 
+            }
             catch (Exception e) 
             {
                 throw new RuntimeException("Деление на ноль!");
             }
+            System.out.println(array[i]);
         }
         System.out.println("\nРезультат: " + Arrays.asList(array));
     }
